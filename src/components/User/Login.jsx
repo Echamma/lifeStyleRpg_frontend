@@ -40,14 +40,14 @@ const Login = ({setCheck, setId}) =>{
           <div className="justify-center grid space-y-2 lg:border-r-2 lg:pr-10 lg:border-b-0 border-b-2 lg:pb-0 pb-5">
             <label className="justify-center flex">Login</label>
             <input onChange={(e) => {setUsername(e.target.value)}} className="border-2 rounded-3xl"/>
-            <input onChange={(e) => {setPassword(e.target.value)}} className="border-2 rounded-3xl" />
+            <input onChange={(e) => {setPassword(e.target.value)}} type = "password" className="border-2 rounded-3xl" />
             <button onClick={TryLogin}>Login</button>
           </div>
 
           <div className="justify-center grid space-y-2 lg:pt-0 pt-5">
             <label className="justify-center flex">Create Account</label>
             <input onChange={(e) => {setUsername(e.target.value)}} className="border-2 rounded-3xl"/>
-            <input onChange={(e) => {setPassword(e.target.value)}} className="border-2 rounded-3xl"/>
+            <input onChange={(e) => {setPassword(e.target.value)}} type = "password" className="border-2 rounded-3xl"/>
             <button onClick={CreateAccount}>Create</button>
           </div>
         </div>
